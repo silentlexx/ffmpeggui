@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">FFmpeg Медіа-кодер</string>
+    <string name="silentlexx">"by SilentLexx"</string>
+    <string name="location">Шлях</string>
+    <string name="cant_read_folder">"Не можна відкрити директорію!"</string>
+    <string name="nnew">Новий файл</string>
+    <string name="select">Вибрати</string>
+    <string name="file_name">"Файл (без розширення):"</string>
+    <string name="cancel">"Скасувати"</string>
+    <string name="create">Створити</string>
+    <string name="no_data">"Немає даних"</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">"Помилка"</string>
+    <string name="run">Почати</string>
+    <string name="save">Зберегти</string>
+    <string name="job_good">"Успіх!"</string>
+    <string name="job_bad">"Помилка!"</string>
+    <string name="resolution">"Розширення"</string>
+    <string name="orig_res">старе</string>
+    <string name="complete">"Конвертація завершено"</string>
+    <string name="input_file">Вхідний файл</string>
+    <string name="preset">Шаблони</string>
+    <string name="error_output">"Не можу створити файл!"</string>
+    <string name="man">"Мануал по FFmpeg"</string>
+    <string name="information">"Про програму"</string>
+    <string name="delete_preset">"Ви точно хочете видалити цей шаблон?"</string>
+    <string name="inout_same">"Вхідний і вихідний файли є одним і тим же файлом!"</string>
+    <string name="cancel_job">"Ви точно хочете перервати?"</string>
+    <string name="name_preset">"Зміни ім'я, для збереження нового шаблону"</string>
+    <string name="output_file">Вихідний файл</string>
+    <string name="init">Ініціалізація…</string>
+    <string name="show_log">"Показати весь лог"</string>
+    <string name="outout_log">"Лог FFmpeg"</string>
+    <string name="overwrite">"Перезаписати файл?"</string>
+    <string name="notfound_if">"Вхідний файл не знайдений!"</string>
+    <string name="one_preset">"Не можу видалити або змінити шаблони за замовчуванням!"</string>
+    <string name="send_mail">"Написати мені"</string>
+    <string name="warning">"Увага"</string>
+    <string name="cant_info">"Не можу отримати інформацію про фото"</string>
+    <string name="minute">"хв."</string>
+    <string name="info_text">"Це простий інтерфейс для гіпер швидкого кодувальника Відео та Аудіо - FFmpeg (http://ffmpeg.org/) FFmpeg вже вбудований в програму і не вимагає закачування додаткових кодеків.
+    Основне призначення: конвертувати будь-яке відео в mp4, зрозумілі Android і утискувати дозвіл під екран пристроїв. Так само можна витягувати звук в mp3 з відео.
+
+    Вимоги: Наявність процесора ARMv7 і вище і i686 і вище. \ N \ n Більше параметрів ви знайдете на сторінках допомоги до FFmpeg."</string>
+    <string name="show">"Показати"</string>
+    <string name="build_info">"Інформація про збірку"</string>
+    <string name="file_info">"Інформація про файл"</string>
+    <string-array name="help_array">
+        <item>"Допомога"</item>
+        <item>"доступні формати"</item>
+        <item>"доступні кодеки"</item>
+        <item>"доступні декодери"</item>
+        <item>"доступні енкодкодери"</item>
+        <item>"доступні фільтри"</item>
+        <item>"Доступні формати пікселів"</item>
+        <item>@string/build_info</item>
+    </string-array>
+    <string-array name="screen_array">
+        <item>"Не змінювати"</item>
+        <item>"По ширині екрану"</item>
+        <item>"За заданої ширині"</item>
+        <item>"Екран"</item>
+        <item>"QVGA"</item>
+        <item>"QCIF"</item>
+        <item>"CIF"</item>
+        <item>HD</item>
+        <item>FHD</item>
+        <item>QHD</item>
+    </string-array>
+    <string name="resize">"Розмір"</string>
+    <string name="close">"Закрити"</string>
+    <string name="aborted">Перервано</string>
+    <string name="error_device">"Програма не сумісна з Вашим пристроєм!"</string>
+    <string name="sorry">"Вибачте…"</string>
+    <string name="path_rus">"Кодування неможливо, так як в імені або шляху файлу мають не ASCII символи (російські наприклад)!"</string>
+    <string name="work">"FFmpeg: Йде конвертація"</string>
+    <string name="settings">Налаштування</string>
+    <string name="scroff_t">"Тримати екран включеним"</string>
+    <string name="scroff_s">"Не давати погасити екран, коли йде кодування."</string>
+    <string name="root_t">"Використовувати права ROOT"</string>
+    <string name="root_s">"Використовувати тільки на рутованія прилади. Може прискорити і стабіліщзіровать роботу."</string>
+    <string name="ended_enc">"Завершення процеcса…"</string>
+    <string name="time_el">Час</string>
+    <string name="log">Лог</string>
+    <string name="progress">Прогрес</string>
+    <string name="preset_res">"Цей шаблон має свій дозвіл (параметр -s)."</string>
+    <string name="quit">Вийти</string>
+    <string name="donate">"Прибрати рекламу"</string>
+    <string name="donate2">"Пожертвувати"</string>
+    <string name="thx">"Дякую за пожертвування! Тепер реклама відключена."</string>
+
+    <string name="pp">"Політика конфіденційності"</string>
+    <string name="agree">Згоден</string>
+    <string name="not_agree">"Не згоден"</string>
+    <string name="bin_version">Версія</string>
+    <string name="console_gui_msg">"Командний рядок:"</string>
+    <string name="to_console">"Переключитися в CLI"</string>
+    <string name="to_gui">"Переключитися в GUI"</string>
+    <string name="console_quit_dialog_msg">"Зміни не будуть збережені. Продовжити?"</string>
+    <string name="open_file">"Файл не знайдено. виберіть файл"</string>
+    <string name="allarch_s">"Показати всі збірки ffmpeg, навіть не підтримує ваш пристрій"</string>
+    <string name="allarch_t">"Показати підтримуються збірки"</string>
+    <string name="choose_file">"Виберіть вхідний файл."</string>
+    <string name="new_preset_name">"Назва шаблону"</string>
+    <string name="volumes">"Розміщення:"</string>
+    <string name="mute">"Без звуку повідомлення"</string>
+    <string name="copy">Копіювати текст</string>
+    <string name="copied">"Лог скопійований в буфер обміну."</string>
+    <string name="batch_job">Всі файли с папки</string>
+    <string name="incorrect_path">Incorrect path</string>
+    <string name="new_res">Нове</string>
+    <string name="cantcreatedir">Не вдаєтся створити папку</string>
+    <string name="converting">Конвертація</string>
+    <string name="dir_name">Ім\'я новой папки</string>
+    <string name="external">зовнішній</string>
+    <string name="from">з</string>
+    <string name="internal">внутрішній</string>
+    <string name="job_abort">Перервано</string>
+    <string name="one_in">1 вхідний файл</string>
+    <string name="two_in">2 вхідних файли</string>
+    <string name="secondfile">Другий вхідний файл</string>
+    <string name="addbuild_title">Як додати зовнішній білд ffmpeg</string>
+    <string name="addbuild_message">Щоб додати зовнішній білд ffmpeg, його потрібно покласти в папку FFMPEG/bin на вашій SD карті (приклад /sdcard/FFMPEG/bin/ffmpeg-some_build).</string>
+    <string name="fs_alert">Щоб правильно працювати на Android 11 та вище, вам потрібно дозволити FFmpeg керувати всіма файлами.</string>
+    <string name="fs_access_btn">Дати дозвіл</string>
+    <string name="important">Важливо!</string>
+    <string name="save_as">Зберегти як</string>
+    <string name="saved_as">Збережено як</string>
+    <string name="load_from">Завантажити iз файлу</string>
+    <string name="loaded_from">Завантажено</string>
+    <string name="backup_title">Резервне копіювання шаблонів</string>
+    <string name="delete_backup">Видалення резервних копій</string>
+    <string name="delete">Видалити</string>
+    <string name="stop_hint">Щоб негайно зупинити процес, натисніть і утримуйте кнопку зупинки.</string>
+    <string name="cantwrite">Немає доступу до цієї папки. Використовувати папку за замовчуванням?</string>
+    <string name="save_to">Зберегти до файлу</string>
+    <string name="wrong_file">Неправильний тип файлу!</string>
+    <string name="allfilessaccess">Доступ до всіх файлів</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/settings"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/fsaccess"
+        android:title="@string/allfilessaccess"
+        android:visible="true"
+        />
+
+
+    <item android:id="@+id/pp" android:title="@string/pp" />
+
+    <item
+        android:id="@+id/declam"
+        android:title="@string/information"
+        android:icon="@drawable/information" />
+
+
+
+    <item
+        android:id="@+id/mail"
+        android:title="@string/send_mail"
+        android:visible="false" />
+
+
+</menu>

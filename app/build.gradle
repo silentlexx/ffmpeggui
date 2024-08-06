@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.silentlexx.ffmpeggui_os"
+        minSdkVersion 21
+        targetSdk 34
+        versionCode 6004
+        versionName "6.0.0_4"
+        externalNativeBuild {
+            ndkBuild {
+                targets "libhelloJNI.so"
+            }
+        }
+        multiDexEnabled true
+        ndk {
+            abiFilters 'x86' , 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+        }
+
+        bundle {
+            language {
+                enableSplit = false
+            }
+            density {
+                // This property is set to true by default.
+                enableSplit = true
+            }
+            abi {
+                // This property is set to true by default.
+                enableSplit = true
+            }
+        }
+
+    }
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+
+    sourceSets.main {
+        assets.srcDirs = [ 'src/main/assets' ]
+        jniLibs.srcDir 'src/main/libs'
+    }
+    namespace 'com.silentlexx.ffmpeggui_os'
+
+
+/*
+    flavorDimensions 'cpuArch'
+    productFlavors {
+        fat {
+            versionCode Integer.parseInt("5" + defaultConfig.versionCode)
+            dimension 'cpuArch'
+            ndk {
+                abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+            }
+        }
+       arm {
+            versionCode Integer.parseInt("1" + defaultConfig.versionCode)
+            minSdkVersion 18
+            dimension 'cpuArch'
+            ndk {
+                abiFilter 'armeabi-v7a'
+            }
+        }
+        arm64 {
+            versionCode Integer.parseInt("2" + defaultConfig.versionCode)
+            minSdkVersion 21
+            dimension 'cpuArch'
+            ndk {
+                abiFilters 'arm64-v8a'
+            }
+        }
+        x86 {
+            versionCode Integer.parseInt("3" + defaultConfig.versionCode)
+            minSdkVersion 18
+            dimension 'cpuArch'
+            ndk {
+                abiFilter 'x86'
+            }
+        }
+        x86_64 {
+            versionCode Integer.parseInt("4" + defaultConfig.versionCode)
+            minSdkVersion 21
+            dimension 'cpuArch'
+            ndk {
+                abiFilter 'x86_64'
+            }
+        }
+    }
+
+
+
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def project = "FFMPEG"
+            def flavor = variant.productFlavors[0].name
+            //def buildType = variant.variantData.variantConfiguration.buildType.name
+            def version = variant.versionName
+            //def date = new Date()
+            //def formattedDate = date.format('ddMMyy_HHmm')
+
+            def newApkName = project + "-" + version + "_" + flavor + ".apk"
+
+            outputFileName = new File(newApkName)
+        }
+    }
+ */
+}
+
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'net.lingala.zip4j:zip4j:2.6.2'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.work:work-runtime-ktx:2.9.0'
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_h">34dp</dimen>
+    <dimen name="button_p">10dp</dimen>
+    <dimen name="button_ts">10sp</dimen>
+    <dimen name="adsH">60dp</dimen>
+    <dimen name="min_agr">120dp</dimen>
+
+    <dimen name="div">6dp</dimen>
+</resources>

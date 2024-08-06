@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+
+
+        <LinearLayout
+            android:id="@+id/out"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/jobs_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="1px">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:id="@+id/scrollView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/listWrp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="gone"></LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/logWrp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/output"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:cursorVisible="false"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:fontFamily="monospace"
+                                    android:gravity="top|left"
+                                    android:inputType="textMultiLine"
+                                    android:padding="12dp"
+                                    android:text="@string/init"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"></TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/progres_wrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/out">
+
+            <LinearLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/staticon"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/accept" />
+
+                <TextView
+                    android:id="@+id/text_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|top"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/jobs_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:visibility="visible"
+            app:backgroundTint="@color/buttonNormal"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@id/showlog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/jobslist" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/showlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:visibility="gone"
+            app:backgroundTint="@color/buttonNormal"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@id/add_job"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/full_log" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:visibility="visible"
+            app:backgroundTint="@color/accent"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/stopjob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/addjob" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/stopjob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            app:backgroundTint="@color/stopjob"
+            app:layout_constraintBottom_toTopOf="@id/close_shell"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/stopjob" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/close_shell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:visibility="gone"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/x" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

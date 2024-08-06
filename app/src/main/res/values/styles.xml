@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="MyTheme" parent="Theme.AppCompat">
+    <item name="android:windowBackground">@color/primary_dark</item>
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primary</item>
+    <item name="colorAccent">@color/accent</item>
+  </style>
+  <style name="MyTheme.Black.NoTitleBar" parent="Theme.AppCompat.NoActionBar" />
+  <style name="MyTheme.Black.NoTitleBar.Fullscreen" parent="Theme.AppCompat.NoActionBar" />
+  <style name="MyTheme.Dialog" parent="Theme.AppCompat.Dialog.Alert" />
+
+  <style name="FullscreenTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@color/primary_dark</item>
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primary</item>
+    <item name="colorAccent">@color/accent</item>
+  </style>
+
+
+  <style name="LogAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <!-- Used for the buttons -->
+    <item name="colorAccent">@color/accent</item>
+    <!-- Used for the title and text -->
+    <item name="android:textColorPrimary">@color/white</item>
+    <!-- Used for the background -->
+    <item name="android:background">@color/primary_dark</item>
+  </style>
+
+  <style name="LogAlertDialogStyle.Subhead">
+    <item name="android:background">@color/dark</item>
+    <item name="android:fontFamily">monospace</item>
+    <item name="android:textSize">12sp</item>
+      <item name="android:textColor">@color/white</item>
+  </style>
+
+
+
+</resources>

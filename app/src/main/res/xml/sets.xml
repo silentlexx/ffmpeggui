@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="ffmpeg_settings"
+    android:title="@string/settings" >
+
+    <CheckBoxPreference android:key="screenoff" android:summary="@string/scroff_s" android:title="@string/scroff_t" />
+    <!--<CheckBoxPreference android:key="all_arch" android:summary="@string/allarch_s" android:title="@string/allarch_t" />-->
+
+    <CheckBoxPreference android:key="mute" android:title="@string/mute" />
+</PreferenceScreen>

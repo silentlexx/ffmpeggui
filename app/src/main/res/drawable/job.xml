@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/job_anim4" android:duration="200" />
+    <item android:drawable="@drawable/job_anim3" android:duration="200" />
+    <item android:drawable="@drawable/job_anim2" android:duration="200" />
+    <item android:drawable="@drawable/job_anim1" android:duration="200" />
+    <item android:drawable="@drawable/job_anim0" android:duration="200" />
+</animation-list>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="adsH">32dp</dimen>
+    <dimen name="div">2dp</dimen>
+    <dimen name="min_agr">100dp</dimen>
+</resources>

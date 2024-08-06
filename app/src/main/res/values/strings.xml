@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FFmpeg Media Encoder</string>
+    <string name="output_file">Output file</string>
+    <string name="input_file">Input file</string>
+    <string name="resolution">Resolution</string>
+    <string name="run">Run</string>
+    <string name="preset">Templates</string>
+    <string name="overwrite">Overwrite output file?</string>
+    <string name="notfound_if">Input file not found!</string>
+    <string name="delete_preset">Do you really wont delete this template?</string>
+    <string name="cancel_job">Do you really want  to abort?</string>
+    <string name="init">Initializing…</string>
+    <string name="job_good">Successfully!</string>
+    <string name="job_bad">Error!</string>
+    <string name="inout_same">Input file and output file are same file!</string>
+    <string name="orig_res">old</string>
+    <string name="complete">Encoding complete</string>
+    <string name="outout_log">FFmpeg output log</string>
+    <string name="name_preset">To add new template, set new name</string>
+    <string name="save">Save</string>
+    <string name="one_preset">You can\'t remove or change default templates!</string>
+    <string name="cant_info">Can\'t get information from video file</string>
+    <string name="warning">Attention!</string>
+    <string name="location">Location</string>
+    <string name="cant_read_folder">folder can\'t be read!</string>
+    <string name="nnew">New file</string>
+    <string name="select">Select file</string>
+    <string name="file_name">File name (without ext.):</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="no_data">No Data</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">Error</string>
+    <string name="information">About app</string>
+    <string name="send_mail">Email me</string>
+    <string name="info_text">This simple graphical user interface for hyper fast video and audio encoder - FFmpeg (http://ffmpeg.org/)
+FFmpeg is already built into the program and does not require download of additional codec.
+\n\n
+Main purpose: to convert any video to mp4, understandable to Android devices and resize under the screen resolution of devices. You can also extract the mp3 audio from the video.
+\n\n
+Requirements: Processor ARMv7 and above or i686 and above.
+\n\n
+More options you will find in FFmpeg\'s man pages.</string>
+    <string name="show_log">Show full log</string>
+    <string name="man">FFmpeg man</string>
+    <string name="error_output">Can\'t create  output file!</string>
+    <string name="minute">min.</string>
+    <string name="show">Show</string>
+    <string name="build_info">Build\'s information</string>
+    <string name="file_info">File information</string>
+    <string-array name="help_array">
+        <item>Help</item>
+        <item>Available formats</item>
+        <item>Available codecs</item>
+        <item>Available decoders</item>
+        <item>Available encoders</item>
+        <item>Available filters</item>
+        <item>Available pixel formats</item>
+        <item>@string/build_info</item>
+    </string-array>
+    <string-array name="screen_array">
+        <item>Don\'t resize</item>
+        <item>Resize by sreen width</item>
+        <item>Resize by set width</item>
+        <item>Resize by screen</item>
+        <item>Resize to QVGA</item>
+        <item>Resize to QCIF</item>
+        <item>Resize to CIF</item>
+        <item>Resize to HD</item>
+        <item>Resize to FHD</item>
+        <item>Resize to QHD</item>
+    </string-array>
+    <string name="resize">Size</string>
+    <string name="close">Close</string>
+    <string name="aborted">Aborted</string>
+    <string name="silentlexx">by SilentLexx</string>
+    <string name="error_device">The program is not compatible with your device!</string>
+    <string name="sorry">Sorry…</string>
+    <string name="path_rus">Coding is not possible, since the file name or path has non-ASCII characters (eg Russian)!</string>
+    <string name="work">FFmpeg: Convertation in progress</string>
+    <string name="settings">Settings</string>
+    <string name="scroff_t">Keep the screen turned on</string>
+    <string name="scroff_s">To keep the screen turned on when encoding…</string>
+    <string name="root_t">Use root privileges</string>
+    <string name="root_s">Superuser needed. Сan speed up encoding.</string>
+    <string name="ended_enc">Process termination…</string>
+    <string name="time_el">Time</string>
+    <string name="log">Log</string>
+    <string name="progress">Progress</string>
+    <string name="preset_res">This template has its own resolution (option-s).</string>
+    <string name="quit">Quit</string>
+    <string name="thx">Thank You for Donation! Now ads has disabled.</string>
+    <string name="donate" >remove ads</string>
+    <string name="donate2">Donate</string>
+
+    <string name="pp">Privacy Policy</string>
+    <string name="agree">Agree</string>
+    <string name="not_agree">Not agree</string>
+    <string name="bin_version">Version</string>
+    <string name="console_gui_msg">Command line:</string>
+    <string name="to_gui">Switch to GUI</string>
+    <string name="console_quit_dialog_msg">Changes will not be saved. Continue?</string>
+    <string name="to_console">Switch to CLI</string>
+    <string name="open_file">File not found. Select a file.</string>
+    <string name="allarch_s">Show all builds of ffmpeg, even not supported by device</string>
+    <string name="allarch_t">Show unsupported builds</string>
+    <string name="choose_file">Select input file.</string>
+    <string name="new_preset_name">The name of the template</string>
+    <string name="volumes">Places:</string>
+    <string name="mute">Mute notification</string>
+    <string name="copy">Copy text</string>
+    <string name="copied">Log copied to the clipboard.</string>
+    <string name="internal">internal</string>
+    <string name="external">external</string>
+    <string name="batch_job">All files in folder</string>
+    <string name="incorrect_path">Incorrect path</string>
+    <string name="new_res">New</string>
+    <string name="from">from</string>
+    <string name="job_abort">Aborted</string>
+    <string name="converting">Converting</string>
+    <string name="secondfile">Second input file</string>
+    <string name="one_in">1 input file</string>
+    <string name="two_in">2 input files</string>
+    <string name="dir_name">New folder name</string>
+    <string name="cantcreatedir" type="id">Can\'t create new folder</string>
+    <string name="vc_btn" translatable="false">Video codec</string>
+    <string name="ac_btn" translatable="false">Audio codec</string>
+    <string name="addbuild_title">How to add external ffmpeg build</string>
+    <string name="addbuild_message">To add an external ffmpeg build, you need to put it in the FFMPEG/bin folder on your SD card (example /sdcard/FFMPEG/bin/ffmpeg-some_build).</string>
+    <string name="builtin" translatable="false">built-in</string>
+    <string name="fromassest" translatable="false">assets</string>
+    <string name="fromsdcard" translatable="false">sdcard</string>
+    <string name="fromapk" translatable="false">apk</string>
+    <string name="fs_alert">To work correctly on Android 11 and  above, you need to allow FFmpeg to manage all files.</string>
+    <string name="fs_access_btn">Give permission</string>
+    <string name="important">Important!</string>
+    <string name="save_as">Save as</string>
+    <string name="saved_as">Saved as</string>
+    <string name="load_from">Load from file</string>
+    <string name="loaded_from">Loaded</string>
+    <string name="backup_title">Backing up templates</string>
+    <string name="delete_backup">Deleting backups</string>
+    <string name="delete">Delete</string>
+    <string name="stop_hint">To stop the process immediately, do long press the stop button.</string>
+    <string name="cantwrite">No write access to this folder. Use default folder?</string>
+    <string name="save_to">Save to file</string>
+    <string name="wrong_file">Wrong file type!</string>
+    <string name="allfilessaccess">All files access</string>
+</resources>

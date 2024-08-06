@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="startjob">#388e3c</color>
+    <color name="stopjob">#d32f2f</color>
+
+    <color name="primary">#37474F</color>
+    <color name="primary_dark">#263238</color>
+    <color name="accent">#388e3c</color>
+    <color name="link">@color/accent</color>
+    <color name="black_overlay">#33000000</color>
+    <color name="dark">#212121</color>
+    <color name="buttonNormal">#616161</color>
+    <color name="white">#E0E0E0</color>
+    <color name="param_name">#64DD17</color>
+    <color name="param_data">#FFD500</color>
+</resources>
