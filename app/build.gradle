@@ -65,69 +65,6 @@ android {
     }
     namespace 'com.silentlexx.ffmpeggui_os'
 
-
-/*
-    flavorDimensions 'cpuArch'
-    productFlavors {
-        fat {
-            versionCode Integer.parseInt("5" + defaultConfig.versionCode)
-            dimension 'cpuArch'
-            ndk {
-                abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
-            }
-        }
-       arm {
-            versionCode Integer.parseInt("1" + defaultConfig.versionCode)
-            minSdkVersion 18
-            dimension 'cpuArch'
-            ndk {
-                abiFilter 'armeabi-v7a'
-            }
-        }
-        arm64 {
-            versionCode Integer.parseInt("2" + defaultConfig.versionCode)
-            minSdkVersion 21
-            dimension 'cpuArch'
-            ndk {
-                abiFilters 'arm64-v8a'
-            }
-        }
-        x86 {
-            versionCode Integer.parseInt("3" + defaultConfig.versionCode)
-            minSdkVersion 18
-            dimension 'cpuArch'
-            ndk {
-                abiFilter 'x86'
-            }
-        }
-        x86_64 {
-            versionCode Integer.parseInt("4" + defaultConfig.versionCode)
-            minSdkVersion 21
-            dimension 'cpuArch'
-            ndk {
-                abiFilter 'x86_64'
-            }
-        }
-    }
-
-
-
-
-    applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            def project = "FFMPEG"
-            def flavor = variant.productFlavors[0].name
-            //def buildType = variant.variantData.variantConfiguration.buildType.name
-            def version = variant.versionName
-            //def date = new Date()
-            //def formattedDate = date.format('ddMMyy_HHmm')
-
-            def newApkName = project + "-" + version + "_" + flavor + ".apk"
-
-            outputFileName = new File(newApkName)
-        }
-    }
- */
 }
 
 
