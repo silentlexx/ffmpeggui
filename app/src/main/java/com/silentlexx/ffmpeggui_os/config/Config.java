@@ -26,7 +26,7 @@ import java.util.List;
 
 public class Config implements ConfigInterface {
 
-	public static final String INT_FFMPEG_VER = "6.0.0";
+	public static final String INT_FFMPEG_VER = "9.1";
 
 	public static final boolean NEW_FS_SYSTEM = true;
 
